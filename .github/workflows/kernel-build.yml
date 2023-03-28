@@ -1,8 +1,10 @@
 name: Kernel Build CI
 
 on:
-  push:
-
+  watch:
+    types: [started]
+  
+  workflow_dispatch:
 jobs:
   build:
 
